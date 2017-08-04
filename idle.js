@@ -1,1 +1,1 @@
-sd
+console.log("Hello, World!")
