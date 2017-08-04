@@ -1,4 +1,3 @@
-<script src="/idle.js"></script>
 var http = require('http');
 
 http.createServer(function (req, res) {
