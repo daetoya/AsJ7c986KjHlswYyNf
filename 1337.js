@@ -2,8 +2,8 @@ const SteamUser = require('steam-user');
 const client = new SteamUser();
 
 const logOnOptions = {
-  accountName: zloiskif,
-  password: lazaruyk16
+  accountName: 'zloiskif',
+  password: 'lazaruyk16'
 };
 
 client.logOn(logOnOptions);
