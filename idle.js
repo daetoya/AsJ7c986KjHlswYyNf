@@ -1,17 +1,20 @@
-const SteamUser = require('steam-user');
-const client = new SteamUser();
+onst SteamUser = require('steam-user');
 const SteamTotp = require('steam-totp');
+const config = require('./config.json');
+
+const client = new SteamUser();
 
 const logOnOptions = {
-  accountName: 'zloiskif',
-  password: 'lazaruyk16'
+  accountName: config.username,
+  password: config.password,
+  twoFactorCode: SteamTotp.generateAuthCode(config.sharedSecret)
 };
 
 client.logOn(logOnOptions);
 
 client.on('loggedOn', () => {
-  console.log('Logged into Steam!');
+  console.log('Logged into Steam');
 
   client.setPersona(SteamUser.Steam.EPersonaState.Online);
-  client.gamesPlayed([33930,107410,224580]);
+  client.gamesPlayed(440);
 });
