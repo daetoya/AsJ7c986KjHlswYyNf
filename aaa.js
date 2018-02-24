@@ -1,11 +1,10 @@
 const SteamUser = require('steam-user');
 const SteamTotp = require('steam-totp');
-
 const client = new SteamUser();
 
 const logOnOptions = {
-  accountName: zloiskif,
-  password: lazaruyk16,
+  accountName: 'zloiskif',
+  password: 'lazaruyk16',
   twoFactorCode: SteamTotp.generateAuthCode('DR=WLs4qa7wn6wtSVpa\/nlDhBSM=')
 };
 
