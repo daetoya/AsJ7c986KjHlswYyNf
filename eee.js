@@ -1,6 +1,5 @@
 const SteamUser = require('steam-user');
 const SteamTotp = require('steam-totp');
-const config = require('./config1.json');
 
 const client = new SteamUser();
 
