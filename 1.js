@@ -12,5 +12,5 @@ client.on('loggedOn', () => {
   console.log('Logged into Steam!');
 
   client.setPersona(SteamUser.Steam.EPersonaState.Online);
-  client.gamesPlayed('33930','107410','224580');
+  client.gamesPlayed("33930","107410","224580");
 });
