@@ -1,4 +1,4 @@
-onst SteamUser = require('steam-user');
+const SteamUser = require('steam-user');
 const SteamTotp = require('steam-totp');
 const config = require('./config.json');
 
