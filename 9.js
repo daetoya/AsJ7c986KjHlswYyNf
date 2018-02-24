@@ -5,7 +5,7 @@ const SteamTotp = require('steam-totp');
 const logOnOptions = {
   accountName: 'zloiskif',
   password: 'lazaruyk16'
-  Code: SteamTotp.generateAuthCode('DR=WLs4qa7wn6wtSVpa\/nlDhBSM=')
+  SteamTotp.generateAuthCode('DR=WLs4qa7wn6wtSVpa\/nlDhBSM=')
 };
 
 client.logOn(logOnOptions);
