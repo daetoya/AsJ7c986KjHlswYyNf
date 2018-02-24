@@ -30,14 +30,6 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                 bot.sendMessage({
                     to: channelID,
                     message: 'Я гей'
-			case 'го в танки':
-                bot.sendMessage({
-                    to: channelID,
-                    message: 'Я гей'
-			case 'танки':
-                bot.sendMessage({
-                    to: channelID,
-                    message: 'Я гей'
                 });
             break;
          }
