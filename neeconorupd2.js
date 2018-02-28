@@ -21,9 +21,12 @@ client.on("message", (message) => {
     message.channel.send("Active");
   }
   
-  if (command === "asl") {
-	  let [age, sex, location] = args; 
-	  message.reply(`Hello ${message.author.username}, I see you're a ${age} year old ${sex} from ${location}. u mom gay`);
+  if (command === "stats") {
+	  let avatar = user.avatarURL;
+	  let id = user.id;
+	  let tag = user.tag;
+	  let [avatar, id, tag] = args; 
+	  message.reply(`Hello ${message.author.username}, Your avatar is ${avatar}, your id is ${id} and tag is ${tag}`);
   }
 	  });
 client.login(config.token);
