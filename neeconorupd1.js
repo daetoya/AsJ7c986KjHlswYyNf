@@ -24,5 +24,6 @@ client.on("message", (message) => {
   if (command === "asl") {
 	  let [age, sex, location] = args; 
 	  message.reply(`Hello ${message.author.username}, I see you're a ${age} year old ${sex} from ${location}. u mom gay`);
+  }
 	  });
 client.login(config.token);
