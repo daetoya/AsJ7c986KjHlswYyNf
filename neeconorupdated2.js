@@ -5,11 +5,12 @@ const config = require ("./config.json");
 
 client.on("ready", () => {
   console.log("I am ready!");
-  const args = message.content.slice(prefix.length).trim().split(/ +/g);
-  const command = args.shift().toLowerCase();
 });
 
 client.on("message", (message) => {
+  const args = message.content.slice(prefix.length).trim().split(/ +/g);
+  const command = args.shift().toLowerCase();
+  
   if (!message.content.startsWith(config.prefix) || message.author.bot) return;	
 	
   if (command === 'help') {
