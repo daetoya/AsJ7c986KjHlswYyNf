@@ -21,8 +21,4 @@ client.on("message", (message) => {
     message.channel.send("Active");
   }
 });
-
-client.on("message", (typingStart) => {
-	message.channel.send("Я все вижу.");
-});
 client.login(config.token);
