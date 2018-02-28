@@ -18,7 +18,7 @@ client.on("message", (message) => {
   }
 });
 
-client.on("roleCreate", (roleCreate) => {
+client.on("message", (roleCreate) => {
 	message.channel.send("A new role was created!");
 });
 client.login(config.token);
